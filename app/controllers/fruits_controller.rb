@@ -4,4 +4,8 @@ class FruitsController < ApplicationController
 
   def new
   end
+
+  def taste
+  end
+
 end
