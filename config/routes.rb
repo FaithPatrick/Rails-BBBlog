@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#show'
+  resources :people
+
   resources :fruits
 
   match 'taste_good', via: [:get], :to => 'fruits#taste'
@@ -7,4 +8,5 @@ Rails.application.routes.draw do
   namespace :interface do
     get 'fruits/all'
   end
+  root 'welcome#show'
 end
